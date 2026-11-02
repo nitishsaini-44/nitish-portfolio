@@ -1,16 +1,98 @@
-# React + Vite
+# Nitish Saini — Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> Personal portfolio of **Nitish Saini** — AI/ML Engineer & Full-Stack Developer, B.Tech @ IIIT Kota.
 
-Currently, two official plugins are available:
+Live at: [nitish-portfolio-jet.vercel.app](https://nitish-portfolio-jet.vercel.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Hero** — Animated intro with social links (GitHub, LinkedIn, HuggingFace, Docker)
+- **About** — Education, leadership, skills masonry, stats strip & resume download
+- **Projects** — Category filter tabs, project cards with modal deep-dives (backstory, highlights, metrics)
+- **Contact** — Email, location & availability cards with a contact form
+- **Responsive** — Fully optimised for mobile, tablet and desktop
+- **Animations** — Framer Motion scroll-triggered sections and navbar auto-hide on scroll
+- **Split Navbar** — Standalone brand logo (`Nitish.`) + floating nav-links pill
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech Stack
+
+| Layer | Technology |
+|---|---|
+| Framework | React 19 + Vite |
+| Styling | Tailwind CSS v4 |
+| Animation | Framer Motion |
+| Icons | Lucide React, React Icons |
+| Deployment | Vercel |
+
+---
+
+## 📁 Project Structure
+
+```
+portfolio-app/
+├── public/
+├── src/
+│   ├── components/
+│   │   ├── Navbar.jsx        # Split brand + nav pill
+│   │   ├── Hero.jsx          # Landing section
+│   │   ├── About.jsx         # Education, skills, stats
+│   │   ├── Projects.jsx      # Filtered project grid
+│   │   ├── ProjectModal.jsx  # Project deep-dive modal
+│   │   ├── Contact.jsx       # Contact cards + form
+│   │   ├── Footer.jsx        # Social links footer
+│   │   └── ui/
+│   │       └── AnimatedSection.jsx
+│   ├── data/
+│   │   └── portfolioData.js  # All content lives here
+│   ├── App.jsx
+│   └── index.css
+├── vercel.json
+└── index.html
+```
+
+---
+
+## 🚀 Getting Started
+
+```bash
+# Clone the repo
+git clone https://github.com/nitishsaini-44/nitish-portfolio.git
+cd portfolio/portfolio-app
+
+# Install dependencies
+npm install
+
+# Start dev server
+npm run dev
+
+# Build for production
+npm run build
+```
+
+---
+
+## 🌐 Deployment (Vercel)
+
+1. Push to GitHub
+2. Import repo on [vercel.com](https://vercel.com)
+3. Set **Root Directory** → `portfolio-app`
+4. Framework auto-detected as **Vite**
+5. Click **Deploy** — done ✅
+
+Every `git push` to `main` triggers an automatic redeploy.
+
+---
+
+## 📬 Contact
+
+| | |
+|---|---|
+| Email | nitishsaini044@gmail.com |
+| LinkedIn | [nitish-s044](https://www.linkedin.com/in/nitish-s044/) |
+| GitHub | [nitishsaini-44](https://github.com/nitishsaini-44) |
+| HuggingFace | [nitishsaini44](https://huggingface.co/nitishsaini44) |
+| Docker Hub | [nitishssaini](https://hub.docker.com/u/nitishssaini) |
