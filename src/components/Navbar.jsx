@@ -17,29 +17,41 @@ const Navbar = () => {
   });
 
   return (
-    <motion.nav
-      variants={{
-        visible: { y: 0, opacity: 1 },
-        hidden: { y: -100, opacity: 0 },
-      }}
-      animate={hidden ? 'hidden' : 'visible'}
-      transition={{ duration: 0.35, ease: 'easeInOut' }}
-      className="fixed top-4 sm:top-8 left-0 right-0 z-50 flex justify-center px-3 sm:px-6 pointer-events-none"
-    >
-      <div className="w-full max-w-6xl mx-auto flex items-center justify-center sm:justify-between px-3 sm:px-8 py-2 sm:py-3.5 rounded-full glass-nav shadow-md pointer-events-auto">
-        <div className="hidden sm:flex items-center mr-4">
-          <span className="font-display font-bold text-lg sm:text-xl text-[#171717] tracking-tight">
+    <>
+      {/* Standalone brand name — top left */}
+      <motion.div
+        variants={{
+          visible: { y: 0, opacity: 1 },
+          hidden: { y: -100, opacity: 0 },
+        }}
+        animate={hidden ? 'hidden' : 'visible'}
+        transition={{ duration: 0.35, ease: 'easeInOut' }}
+        className="fixed top-4 sm:top-8 left-4 sm:left-20 z-40 pointer-events-auto"
+      >
+        <a href="#home" onClick={() => setActive('Home')} className="px-1.5 sm:px-2.5 py-0.5 rounded-full glass-nav shadow-md block">
+          <span className="font-display font-bold text-lg sm:text-4xl text-[#171717] tracking-tight select-none">
             {personalInfo.name.split(' ')[0]}<span className="text-[#FF6B6B]">.</span>
           </span>
-        </div>
-        
-        <ul className="flex items-center gap-0.5 sm:gap-2">
+        </a>
+      </motion.div>
+
+      {/* Nav links pill — top right */}
+      <motion.nav
+        variants={{
+          visible: { y: 0, opacity: 1 },
+          hidden: { y: -100, opacity: 0 },
+        }}
+        animate={hidden ? 'hidden' : 'visible'}
+        transition={{ duration: 0.35, ease: 'easeInOut' }}
+        className="fixed top-4 sm:top-8 right-3 sm:right-10 z-40 pointer-events-auto"
+      >
+        <ul className="flex items-center gap-0 sm:gap-1 px-1.5 sm:px-3 py-1.5 sm:py-2 rounded-full glass-nav shadow-md">
           {navLinks.map((link) => (
             <li key={link.label}>
               <a
                 href={link.href}
                 onClick={() => setActive(link.label)}
-                className={`relative px-3 sm:px-4 py-1.5 sm:py-2 text-xs sm:text-sm font-semibold transition-colors rounded-full ${
+                className={`relative px-2 sm:px-4 py-1 sm:py-1.5 text-[11px] sm:text-sm font-semibold transition-colors rounded-full block ${
                   active === link.label ? 'text-[#4F46E5]' : 'text-[#52525B] hover:text-[#171717]'
                 }`}
               >
@@ -55,8 +67,8 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
-      </div>
-    </motion.nav>
+      </motion.nav>
+    </>
   );
 };
 
