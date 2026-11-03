@@ -72,10 +72,10 @@ export const projects = [
     subtitle: "AI Email Triage & Lead Management SaaS",
     category: "Full-Stack & AI",
     image: "https://images.unsplash.com/photo-1596526131083-e8c633c948d2?q=80&w=1200&auto=format&fit=crop",
-    description: "A production-grade SaaS platform automating email classification, lead management, and real-time notifications with LLaMA 3.1 and event-driven architecture.",
-    backstory: "Handling high volumes of business communication requires immediate prioritization and automated workflows. SynapseSync is an end-to-end cloud platform integrating Gmail API and Google Cloud Pub/Sub for push-based, near-real-time ingestion without continuous polling. Using Groq API with LLaMA 3.1, incoming emails are categorized into urgent, sales, support, and spam with automated executive summaries and reply drafts. Backed by Celery workers, PostgreSQL, and Flask-SocketIO, it provides enterprise-grade reliability and instant updates to a modern React 19 dashboard.",
+    description: "A production-grade SaaS platform automating email classification, lead management, and real-time notifications with GPT-OSS 20B and event-driven architecture.",
+    backstory: "Handling high volumes of business communication requires immediate prioritization and automated workflows. SynapseSync is an end-to-end cloud platform integrating Gmail API and Google Cloud Pub/Sub for push-based, near-real-time ingestion without continuous polling. Using Groq API with GPT-OSS 20B, incoming emails are categorized into urgent, sales, support, and spam with automated executive summaries and reply drafts. Backed by Celery workers, PostgreSQL, and Flask-SocketIO, it provides enterprise-grade reliability and instant updates to a modern React 19 dashboard.",
     highlights: [
-      "Integrated Groq API (LLaMA 3.1) to classify emails into urgent, sales, support, and spam categories, generate summaries, and draft replies.",
+      "Integrated Groq API (GPT-OSS 20B) to classify emails into urgent, sales, support, and spam categories, generate summaries, and draft replies.",
       "Implemented Gmail API and Google Cloud Pub/Sub push notifications for near-real-time email processing without continuous polling.",
       "Built an asynchronous processing pipeline using Celery and concurrent email processing.",
       "Designed a PostgreSQL database architecture for persistent email storage, lead management, and analytics.",
@@ -86,7 +86,7 @@ export const projects = [
     ],
     technologies: [
       "React 19", "Vite", "Tailwind CSS", "Python", "Flask", "Groq API", 
-      "LLaMA 3.1", "PostgreSQL", "Celery", "GCP Pub/Sub", "Gmail API", 
+      "GPT-OSS 20B", "PostgreSQL", "Celery", "GCP Pub/Sub", "Gmail API", 
       "Socket.IO", "Discord Webhooks", "JWT", "Docker"
     ],
     tags: ["Full-Stack & AI", "Generative AI", "Cloud SaaS"],
@@ -96,7 +96,7 @@ export const projects = [
       live: "https://synapsesync-sam.vercel.app" 
     },
     metrics: [
-      { label: "AI Model", value: "LLaMA 3.1" },
+      { label: "AI Model", value: GPT-OSS 20B" },
       { label: "Architecture", value: "Pub/Sub" },
       { label: "Async Pipeline", value: "Celery" },
       { label: "Security", value: "OAuth & JWT" }
