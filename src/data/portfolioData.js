@@ -272,7 +272,7 @@ export const projects = [
     tags: ["Reinforcement Learning", "Machine Learning", "FinTech"],
     status: "Research",
     links: { 
-      github: "https://github.com/nitishsaini-44" 
+      github: "https://github.com/nitishsaini-44/StockTradingBot" 
     },
     metrics: [
       { label: "Episodes", value: "300+" },
