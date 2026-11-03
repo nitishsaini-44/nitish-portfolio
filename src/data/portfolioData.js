@@ -96,7 +96,7 @@ export const projects = [
       live: "https://synapsesync-sam.vercel.app" 
     },
     metrics: [
-      { label: "AI Model", value: GPT-OSS 20B" },
+      { label: "AI Model", value: "GPT-OSS 20B" },
       { label: "Architecture", value: "Pub/Sub" },
       { label: "Async Pipeline", value: "Celery" },
       { label: "Security", value: "OAuth & JWT" }
